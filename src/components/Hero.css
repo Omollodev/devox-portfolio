@@ -1,0 +1,233 @@
+/* Hero Section - Two Column Layout */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0a192f 0%, #0a2a3f 100%);
+  padding-top: 70px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* CSS Grid for Two Columns */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* LEFT COLUMN - Content Styles */
+.hero-content {
+  text-align: left;
+}
+
+.hero-greeting {
+  color: #64ffda;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-title {
+  font-size: 1.3rem;
+  color: #8892b0;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #64ffda;
+  padding-left: 1rem;
+}
+
+.hero-description {
+  color: #a8b2d1;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Button Styles */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #64ffda;
+  color: #0a192f;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4cd8b5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.btn-secondary:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Social Links */
+.hero-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: #8892b0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #64ffda;
+}
+
+/* RIGHT COLUMN - Profile Image Styles */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #64ffda 0%, #0a192f 100%);
+  padding: 5px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Placeholder (until you add your photo) */
+.profile-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #112240;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.placeholder-text {
+  color: #64ffda;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.placeholder-hint {
+  color: #8892b0;
+  font-size: 0.7rem;
+}
+
+/* Actual Profile Image (uncomment when you add your photo) */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive Design - Stack on Mobile */
+@media (max-width: 968px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+
+  .hero-title {
+    border-left: none;
+    padding-left: 0;
+    border-top: 3px solid #64ffda;
+    padding-top: 1rem;
+    display: inline-block;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-greeting {
+    font-size: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+  }
+
+  .image-wrapper {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 200px;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+}
