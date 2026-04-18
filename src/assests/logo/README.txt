@@ -1,0 +1,1 @@
+This is placeholder for logo recommed size 40*40px or 60x60px
