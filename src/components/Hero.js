@@ -9,12 +9,11 @@ function Hero() {
       <div className="hero-container">
         <div className="hero-grid">
           
-          {/* LEFT COLUMN - Hero Content */}
           <div className="hero-content">
             <p className="hero-greeting">Hi, I'm</p>
             <h1 className="hero-name">Devox Omollo</h1>
             <p className="hero-title">
-              Cybersecurity Enthusiast | Full-Stack Developer
+            Cybersecurity Enthusiast | Full-Stack Developer
             </p>
             <p className="hero-description">
               I'm a passionate developer with expertise in building modern web applications. Cybersecurity enthusiast with a knack for creating secure and efficient solutions. I love crafting beautiful and functional user experiences.
@@ -24,7 +23,6 @@ function Hero() {
               <a href="/Devox_Omollo_Resume.pdf" className="btn-secondary" download>Download Resume</a>
             </div>
             
-            {/* Social Links */}
             <div className="hero-social">
               <a href="https://github.com/Omollodev" target="_blank" rel="noopener noreferrer" className="social-link">
                 GitHub
@@ -40,14 +38,7 @@ function Hero() {
 
           {/* RIGHT COLUMN - Profile Picture */}
           <div className="hero-image">
-            <div className="image-wrapper">
-              {/* PROFILE PICTURE PLACEHOLDER */}
-              {/* Option 1: Placeholder div (remove this when you add your photo) */}
-              <div className="profile-placeholder">
-                <span className="placeholder-text">Your Photo Here</span>
-                <span className="placeholder-hint">Add to: src/assets/images/profile.jpg</span>
-              </div>
-              
+            <div className="image-wrapper">         
               {
               <img 
                 src={profilePic} 
