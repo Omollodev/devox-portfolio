@@ -3,9 +3,9 @@ import './Projects.css';
 import carWashImg from '../assests/images/projects/car-wash.jpg';
 import barcodeImg from '../assests/images/projects/barcode-system.jpg';
 import repairTrackerImg from '../assests/images/projects/repair-tracker.jpg';
-import portfolioImg from '../assets/images/projects/portfolio.jpg';
+import portfolioImg from '../assests/images/projects/portfolio.jpg';
+import bankingImg from '../assests/images/projects/banking-system.png';
 {/*
-import bankingImg from '../assets/images/projects/banking-system.jpg';
 import securityLabImg from '../assets/images/projects/security-lab.jpg';
 import siemImg from '../assets/images/projects/siem.jpg';
 import networkImg from '../assets/images/projects/network.jpg';
@@ -79,7 +79,7 @@ const projects = [
     features: ["Vulnerable apps", "Pen testing tools", "Containerized setup"],
     github: "https://github.com/Omollodev/web-security-lab",
     live: "#",
-    image: securityLabImg
+    image: placeholderImg
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ const projects = [
     features: ["Real-time monitoring", "Alert system", "Log analysis", "Dashboard"],
     github: "https://github.com/Omollodev/siem-lab",
     live: "#",
-    image: siemImg
+    image: placeholderImg
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ const projects = [
     features: ["Network segmentation", "Access control", "Monitoring setup"],
     github: "https://github.com/Omollodev/network-setup",
     live: "#",
-    image: networkImg
+    image: placeholderImg
   },
   {
     id: 9,
@@ -112,7 +112,8 @@ const projects = [
     features: ["Container orchestration", "Cloud deployment", "Security hardening"],
     github: "https://github.com/Omollodev/cloud-security",
     live: "#",
-    image: cloudImg
+    image: placeholderImg
+
   }
 ];
 
