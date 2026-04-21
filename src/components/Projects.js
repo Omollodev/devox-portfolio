@@ -5,12 +5,6 @@ import barcodeImg from '../assests/images/projects/barcode-system.jpg';
 import repairTrackerImg from '../assests/images/projects/repair-tracker.jpg';
 import portfolioImg from '../assests/images/projects/portfolio.jpg';
 import bankingImg from '../assests/images/projects/banking-system.png';
-{/*
-import securityLabImg from '../assets/images/projects/security-lab.jpg';
-import siemImg from '../assets/images/projects/siem.jpg';
-import networkImg from '../assets/images/projects/network.jpg';
-import cloudImg from '../assets/images/projects/cloud.jpg';
-*/}
 
 const placeholderImg = 'https://via.placeholder.com/600x340?text=Project+Screenshot';
 
