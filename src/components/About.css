@@ -18,7 +18,7 @@
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -98,7 +98,9 @@
   background: #112240;
   border-radius: 10px;
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .fact-card:hover {
@@ -144,11 +146,11 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .about-sidebar {
     order: 2;
   }
-  
+
   .about-content {
     order: 1;
   }
@@ -158,19 +160,19 @@
   .about {
     padding: 60px 0;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .about-intro {
     font-size: 1.1rem;
   }
-  
+
   .fact-card {
     padding: 1.2rem;
   }
-  
+
   .fact-label {
     min-width: 85px;
   }
@@ -180,11 +182,11 @@
   .about-container {
     padding: 0 1rem;
   }
-  
+
   .fact-list li {
     font-size: 0.8rem;
   }
-  
+
   .fact-label {
     min-width: 75px;
   }

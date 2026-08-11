@@ -64,7 +64,8 @@
   margin-bottom: 2rem;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   padding: 0.8rem 1.8rem;
   border-radius: 5px;
   font-weight: 500;
@@ -222,7 +223,8 @@
     align-items: center;
   }
 
-  .btn-primary, .btn-secondary {
+  .btn-primary,
+  .btn-secondary {
     width: 200px;
     text-align: center;
   }

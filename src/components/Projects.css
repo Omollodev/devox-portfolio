@@ -33,7 +33,9 @@
   background: #112240;
   border-radius: 10px;
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -96,8 +98,6 @@
 .project-link:hover {
   color: #4cd8b5;
 }
-
-/* Add these styles to your existing Projects.css */
 
 /* Category Filter Buttons */
 .project-categories {
@@ -166,7 +166,9 @@
   background: #112240;
   border-radius: 10px;
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -215,16 +217,38 @@
 }
 
 /* Responsive adjustments */
+.projects-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.show-more-btn {
+  background: transparent;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .project-categories {
     gap: 0.5rem;
   }
-  
+
   .category-btn {
     padding: 0.3rem 1rem;
     font-size: 0.8rem;
   }
-  
+
   .project-features ul {
     gap: 0.3rem;
   }
@@ -234,7 +258,7 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
