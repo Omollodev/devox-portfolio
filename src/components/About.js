@@ -18,15 +18,6 @@ function About() {
               hands-on experience in various projects, I'm eager to contribute
               my skills and grow in the tech industry.
             </p>
-            <p className="about-text">
-              I'm an active bug bounty hunter on Bugcrowd, working across web
-              applications and Android APKs, and I maintain a personal security
-              lab (Docker, Kali Linux, Burp Suite, Splunk, Suricata) to stay
-              sharp on OWASP Top 10 and real-world vulnerability classes. Recent
-              work spans a barcode-based registration system, a legacy core
-              banking simulation, a car wash management platform, and a SIEM
-              implementation for intrusion detection.
-            </p>
 
             <div className="about-education">
               <h3>Education &amp; Certification</h3>

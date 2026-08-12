@@ -2,9 +2,10 @@ import React from "react";
 import "./Footer.css";
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="footer">
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <p>&copy; {year} Devox Omollo. All rights reserved.</p>
     </footer>
   );
 }

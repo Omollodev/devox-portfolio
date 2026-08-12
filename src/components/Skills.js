@@ -1,24 +1,49 @@
 import React from "react";
 import "./Skill.css";
-import skillIcon from "../assests/icons/favicon.ico";
+
+const skillGroups = [
+  {
+    title: "Cynsersecurity researcher",
+    skills: [
+      "Pentesting (Web & Android APK)",
+      "OWASP Top 10",
+      "Burpsuite & Caido",
+    ],
+  },
+  {
+    title: "Cloud *& Infracture",
+    skills: ["AWS", "Docker", "Kubernetes", "Linux", "VLANS & Firewalls"],
+  },
+  {
+    title: "Development",
+    skills: [
+      "Web Development",
+      "Android Developmet (React-native, Java)",
+      "(MERN) Tech Stack i.e. MongoDB, Express, React & Node",
+      "Python (Flask, Django",
+    ],
+  },
+  {
+    title: "Tools & Practices",
+    skills: ["Git / Github", "Postman", "Nmap", "JWT-based Auth", "REST APIs"],
+  },
+];
 
 function Skills() {
   return (
     <section id="skills" className="skills">
-      <h2>Skills</h2>
+      <h2 className="section-title">Skills</h2>
       <div className="skills-container">
-        <div className="skill-card">
-          <img src={skillIcon} alt="skill icon" className="skill-icon" />
-          <h3>Web Development</h3>
-        </div>
-        <div className="skill-card">
-          <img src={skillIcon} alt="skill icon" className="skill-icon" />
-          <h3>JavaScript</h3>
-        </div>
-        <div className="skill-card">
-          <img src={skillIcon} alt="skill icon" className="skill-icon" />
-          <h3>React</h3>
-        </div>
+        {skillGroups.map((group) => (
+          <div className="skill-card" key={group.title}>
+            <h3>{group.title}</h3>
+            <ul className="skill-list">
+              {group.skills.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
