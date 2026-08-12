@@ -16,15 +16,18 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <About />
-              <Projects />
-              <Skills />
-              <Contact />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+              </>
+            }
+          />
         </Routes>
       </main>
       <Footer />
