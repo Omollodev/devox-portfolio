@@ -4,6 +4,7 @@ import carWashImg from "../assests/images/projects/car-wash.jpg";
 import barcodeImg from "../assests/images/projects/barcode-system.jpg";
 import repairTrackerImg from "../assests/images/projects/repair-tracker.jpg";
 import portfolioImg from "../assests/images/projects/portfolio.jpg";
+import bluebirdImg from "../assests/images/projects/bluebird-hotel.jpg";
 import bankingImg from "../assests/images/projects/banking-system.png";
 
 const projects = [
@@ -17,6 +18,17 @@ const projects = [
       "https://github.com/Omollodev/car-detailing-workflow-management-system.git",
     live: "#",
     image: carWashImg,
+  },
+  {
+    id: 6,
+    title: "Bluebird Hotel Management System",
+    category: "Full-Stack Application",
+    description:
+      "A hotel management system where guests make reservations online and assigned rooms receive room services after check-in.",
+    technologies: ["Python", "Django", "Bootstrap 5", "HTML", "CSS", "JavaScript", "PostgreSQL"],
+    github: "#",
+    live: "#",
+    image: bluebirdImg,
   },
   {
     id: 2,
