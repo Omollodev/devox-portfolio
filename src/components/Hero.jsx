@@ -11,22 +11,22 @@ function Hero() {
             <p className="hero-greeting">Hi, I'm</p>
             <h1 className="hero-name">Devox Omollo</h1>
             <p className="hero-title">
-              Cybersecurity Enthusiast | Full-Stack Developer
+              Full-Stack Developer | DevSecOps | Security Reviewer
             </p>
             <p className="hero-description">
-              I'm a passionate developer with expertise in building full-stack
-              applications across the MERN stack, Python, and Java, then test
-              them like an attacker would. Active bug bounty hunter on Bugcrowd,
-              working across web applications and Android APKs, with hands-on
-              experience in penetration testing, vulnerability assessment, and
-              secure development practices.
+              I build full-stack applications with Python (Django and Bootstrap),
+              React, and React Native on Expo and EAS, on the MERN and PERN
+              stacks and Java. I ship them through Git and GitHub, CI/CD
+              pipelines, Docker and Kubernetes, then review them for security
+              with black-box and white-box testing. Active bug bounty hunter on
+              Bugcrowd, working across web applications and Android APKs.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn-primary">
                 View Projects
               </a>
               <a
-                href="/public/Devox_Omollo_CV.pdf"
+                href="/Devox_Omollo_CV.pdf"
                 className="btn-secondary"
                 download
               >
@@ -53,11 +53,14 @@ function Hero() {
               </a>
               <a
                 href="https://bugcrowd.com/h/Th4_Hunt3r"
-                target="blank"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
               >
                 Bugcrowd
+              </a>
+              <a href="https://www.devoxsec.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                DevoxSec Technologies
               </a>
               <a href="mailto:devoxomollo@gmail.com" className="social-link">
                 Email

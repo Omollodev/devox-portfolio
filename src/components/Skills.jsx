@@ -3,29 +3,38 @@ import "./Skill.css";
 
 const skillGroups = [
   {
-    title: "Cynsersecurity researcher",
+    title: "Full-Stack Development",
     skills: [
-      "Pentesting (Web & Android APK)",
+      "Python: Django with Bootstrap",
+      "React for web interfaces",
+      "React Native with Expo & EAS",
+      "MERN & PERN stacks",
+      "Java",
+    ],
+  },
+  {
+    title: "Databases",
+    skills: ["MongoDB", "PostgreSQL", "SQL", "SQLite3"],
+  },
+  {
+    title: "DevSecOps",
+    skills: [
+      "Git & GitHub",
+      "CI/CD workflow pipelines",
+      "Docker",
+      "Kubernetes",
+      "Linux",
+    ],
+  },
+  {
+    title: "Security Review",
+    skills: [
+      "Black-box testing (web & Android APK)",
+      "White-box code and configuration review",
       "OWASP Top 10",
-      "Burpsuite & Caido",
+      "Burp Suite & Caido",
+      "Bug bounty research",
     ],
-  },
-  {
-    title: "Cloud *& Infracture",
-    skills: ["AWS", "Docker", "Kubernetes", "Linux", "VLANS & Firewalls"],
-  },
-  {
-    title: "Development",
-    skills: [
-      "Web Development",
-      "Android Developmet (React-native, Java)",
-      "(MERN) Tech Stack i.e. MongoDB, Express, React & Node",
-      "Python (Flask, Django",
-    ],
-  },
-  {
-    title: "Tools & Practices",
-    skills: ["Git / Github", "Postman", "Nmap", "JWT-based Auth", "REST APIs"],
   },
 ];
 

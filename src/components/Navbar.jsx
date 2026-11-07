@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../assests/logo/icon-logo.png';
+import Logo from './Logo';
 import './Navbar.css';
 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute('data-theme') || 'light'
+  );
+
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('devoxsec-theme', next); } catch (e) { /* storage blocked */ }
+    setTheme(next);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,13 +28,24 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <img src={logo} alt="Devox Logo" className="logo" />
-        { /*<div className="nav-logo">
-          <span className="logo-text">Devox<span className="highlight">Sec</span></span>
-        </div>
+        <a href="#hero" className="nav-brand" aria-label="Devox Omollo, home">
+          <Logo size={34} />
+          <span className="nav-brand-text">
+            <b>Devox Omollo</b>
+            <small>Developer &amp; Security</small>
+          </span>
+        </a>
 
         {/* Mobile Menu Button */}
-        <div className="menu-icon" onClick={toggleMenu}>
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          {theme === 'dark' ? '☀' : '☾'}
+        </button>
+        <div className="menu-icon" onClick={toggleMenu} role="button" tabIndex={0} aria-label="Open menu" onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleMenu()}>
           <div className={`hamburger ${isOpen ? 'open' : ''}`}>
             <span></span>
             <span></span>
