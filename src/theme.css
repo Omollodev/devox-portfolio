@@ -1,0 +1,57 @@
+/* DevoxSec design tokens: same values as devoxsec.com so both sites match. */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f4f5fa;
+  --surface: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --ink: #1b1f3b;
+  --muted: #6b7086;
+  --muted-soft: #9a9fb4;
+  --line: #ececf3;
+  --coral: #e8473c;
+  --coral-dark: #cf3428;
+  --coral-soft: #fdeceb;
+  --indigo: #4b3bf0;
+  --shadow-color: rgba(27, 31, 59, 0.12);
+  --font-display: "Rubik", "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --radius-m: 14px;
+  --radius-l: 20px;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f1117;
+  --bg-soft: #151822;
+  --surface: #1a1e28;
+  --header-bg: rgba(15, 17, 23, 0.92);
+  --ink: #eef0f7;
+  --muted: #a7acc4;
+  --muted-soft: #767c99;
+  --line: #2a2f3d;
+  --coral-soft: rgba(232, 71, 60, 0.14);
+  --shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); }
+html { scroll-behavior: smooth; }
+:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+
+/* Cards pick up the company card look: soft border and shadow */
+.project-card, .skill-card, .about-card, .contact-card {
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px -14px var(--shadow-color);
+}
+/* Alternate section backgrounds like the main site */
+.about, .skills { background: var(--bg-soft); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}

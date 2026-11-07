@@ -4,29 +4,40 @@
     <meta charset="utf-8" />
     <link
       rel="icon"
-      href="/src/assests/icons/favicon.ico"
-      type="image/x-icon"
+      href="/favicon.svg"
+      type="image/svg+xml"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0a192f" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1117" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        var t = localStorage.getItem("devoxsec-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
 
     <!-- Primary SEO -->
     <title>Devox - Portfolio</title>
     <meta
       name="description"
-      content="Devox Otieno Omollo is a Security researcher, and full-stack developer specializing in MERN, Python, and Java, with active bug bounty research on web applications and Android APKs."
+      content="Devox Otieno Omollo is a Security researcher, and full-stack developer offering full-stack development (Django, React, React Native, MERN/PERN, Java), DevSecOps and black-box and white-box security reviews, with active bug bounty research on web applications and Android APKs."
     />
     <meta
       name="keywords"
-      content="Devox Omollo, security researcher, full-stack developer, MERN stack developer, penetration tester, web security, Android APK penetesting"
+      content="Devox Omollo, security researcher, full-stack developer, Django, React Native, MERN stack, PERN stack, Java, DevSecOps, Docker, Kubernetes, CI/CD, black-box testing, white-box testing, Android APK security"
     />
     <meta name="author" content="Devox Otieno Omollo" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://devox-portfolio.vercel.app/" />
+    <link rel="canonical" href="https://portfolio.devoxsec.com/" />
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devox-portfolio.vercel.app/" />
+    <meta property="og:url" content="https://portfolio.devoxsec.com/" />
     <meta property="og:site_name" content="Devox Omollo Portfolio" />
     <meta
       property="og:title"
@@ -34,11 +45,11 @@
     />
     <meta
       property="og:description"
-      content="Security researcher, and full-stack developer specializing in MERN, Python, and Java, with active bug bounty research on web applications and Android APKs."
+      content="Security researcher, and full-stack developer offering full-stack development (Django, React, React Native, MERN/PERN, Java), DevSecOps and black-box and white-box security reviews, with active bug bounty research on web applications and Android APKs."
     />
     <meta
       property="og:image"
-      content="https://devox-portfolio.vercel.app/og-image.jpg"
+      content="https://portfolio.devoxsec.com/og-image.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -52,17 +63,17 @@
     />
     <meta
       name="twitter:description"
-      content="Security researcher, and full-stack developer specializing in MERN, Python, and Java, with active bug bounty research on web applications and Android APKs."
+      content="Security researcher, and full-stack developer offering full-stack development (Django, React, React Native, MERN/PERN, Java), DevSecOps and black-box and white-box security reviews, with active bug bounty research on web applications and Android APKs."
     />
     <meta|
       name="twitter:image"
-      content="https://devox-portfolio.vercel.app/og-image.jpg"
+      content="https://portfolio.devoxsec.com/og-image.jpg"
     />
 
     <link
       rel="apple-touch-icon"
-      href="/src/assests/icons/favicon.ico"
-      type="image/x-icon"
+      href="/favicon.svg"
+      type="image/svg+xml"
     />
     <link rel="manifest" href="/public/manifest.json" />
 
@@ -73,10 +84,10 @@
         "@type": "Person",
         "name": "Devox Otieno Omollo",
         "alternateName": "Devox Omollo",
-        "url": "https://devox-portfolio.vercel.app/",
-        "image": "https://devox-portfolio.vercel.app/og-image.jpg",Security researcher, and full-stack developer specializing in MERN, Python, and Java, with active bug bounty research on web applications and Android APKs.
-        "jobTitle": "DevSec Engineer",
-        "description": "Security researcher, and full-stack developer specializing in MERN, Python, and Java, with active bug bounty research on web applications and Android APKs.",
+        "url": "https://portfolio.devoxsec.com/",
+        "image": "https://portfolio.devoxsec.com/og-image.jpg",Security researcher, and full-stack developer offering full-stack development (Django, React, React Native, MERN/PERN, Java), DevSecOps and black-box and white-box security reviews, with active bug bounty research on web applications and Android APKs.
+        "jobTitle": "Full-Stack Developer and DevSecOps Engineer",
+        "description": "Security researcher, and full-stack developer offering full-stack development (Django, React, React Native, MERN/PERN, Java), DevSecOps and black-box and white-box security reviews, with active bug bounty research on web applications and Android APKs.",
         "email": "mailto:info@devoxsec.com",
         "telephone": "+254713318602",
         "address": {
@@ -92,13 +103,15 @@
         ],
         "knowsAbout": [
           "DevSecOps",
-          "Penetration Testing",
+          "Black-box and White-box Security Testing",
           "Web Application Security",
           "Android APK Security",
-          "MERN Stack Development",
-          "Python",
+          "Django",
+          "React and React Native",
+          "MERN and PERN Stack Development",
           "Java",
-          "Cloud Security"
+          "Docker and Kubernetes",
+          "CI/CD Pipelines"
         ]
       }
     </script>

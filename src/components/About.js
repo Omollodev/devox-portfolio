@@ -66,7 +66,7 @@ function About() {
             <div className="fact-card">
               <h3>What I Bring</h3>
               <ul className="fact-list">
-                <li>Full-stack delivery across MERN, Python, and Java</li>
+                <li>Full-stack delivery with Django, React, React Native, MERN/PERN, and Java</li>
                 <li>
                   Hands-on penetration testing and vulnerability assessment
                 </li>

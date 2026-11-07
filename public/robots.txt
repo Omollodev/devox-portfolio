@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://devox-portfolio.vercel.app/sitemap.xml
+sitemap: https://portfolio.devoxsec.com/sitemap.xml

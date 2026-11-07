@@ -1,0 +1,26 @@
+name: CI
+on:
+  push: { branches: [main] }
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm test -- --watchAll=false --passWithNoTests
+        env: { CI: "true" }
+      - run: npm run build
+        env: { CI: "true" }
+      - uses: actions/upload-artifact@v4
+        with: { name: build, path: build, retention-days: 7 }
+  # Deployment: connect the repo to Vercel (Git integration). Pushes to main
+  # deploy to production; pull requests get preview URLs. This job only gates
+  # on CI, so protect `main` and require "build-test" before merging.
